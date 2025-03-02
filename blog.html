@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme = "light">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -24,84 +24,101 @@
         .poppins {
             font-family: "Poppins", sans-serif;
         }
-        
     </style>
 </head>
+
 <body class="poppins bg-[#F4F7FF] text-[#00303C] p-5">
     <section class="w-11/12 mx-auto">
         <!-- navbar -->
-    <header class="bg-white shadow-md rounded-xl ">
-        <nav class="flex justify-between py-5 px-6 ">
-            <div class="flex items-center gap-4">
-                <img src="assets/logo.png" alt="">
-                <h1 class=" text-3xl">Dev<span class="font-bold">Board</span></h1>
-            </div>
-            <div class="flex items-center gap-9">
-                <button id="back-btn" class="btn btn-secondary border-0 bg-[#3752FD] rounded-lg px-5">Back to Desk</button>
-            </div>
-        </nav>
-    </header>
+        <header class="bg-white shadow-md rounded-xl ">
+            <nav class="flex justify-between py-5 px-6 ">
+                <div class="flex items-center gap-4">
+                    <img src="assets/logo.png" alt="">
+                    <h1 class=" text-3xl">Dev<span class="font-bold">Board</span></h1>
+                </div>
+                <div class="flex items-center gap-9">
+                    <button id="back-btn" class="btn btn-secondary border-0 bg-[#3752FD] rounded-lg px-5">Back to
+                        Desk</button>
+                </div>
+            </nav>
+        </header>
 
-    <h1 class="font-bold text-center text-3xl mt-4">Blogs</h1>
-    
-    <main class=" mt-5 ">
-        <section>
-            <!-- question 1 -->
-            <div class="space-y-5 shadow-md p-5 rounded-xl bg-white mt-5">
-                <h2 class="font-bold text-xl">
-                    Question-1: What are the different ways to select an element in the DOM?
-                </h2>
-                <hr class="border-dashed opacity-25">
-                <p class="text-gray-500">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo corrupti velit quo sapiente magni tenetur blanditiis autem nemo rem nihil.
-                </p>
-            </div>
-            <!-- question 2 -->
-            <div class="space-y-5 shadow-md p-5 rounded-xl bg-white mt-5">
-                <h2 class="font-bold text-xl">
-                    Question-2: What is the difference between innerHTML, innerText, and textContent ?
-                </h2>
-                <hr class="border-dashed opacity-25">
-                <p class="text-gray-500">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo corrupti velit quo sapiente magni tenetur blanditiis autem nemo rem nihil.
-                </p>
-            </div>
-            <!-- question 3 -->
-            <div class="space-y-5 shadow-md p-5 rounded-xl bg-white mt-5">
-                <h2 class="font-bold text-xl">
-                    Question-3: What is event delegation in the DOM?
-                </h2>
-                <hr class="border-dashed opacity-25">
-                <p class="text-gray-500">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo corrupti velit quo sapiente magni tenetur blanditiis autem nemo rem nihil.
-                </p>
-            </div>
-            <!-- question 4 -->
-            <div class="space-y-5 shadow-md p-5 rounded-xl bg-white mt-5">
-                <h2 class="font-bold text-xl">
-                    Question-4: What is event bubbling in the DOM?
-                </h2>
-                <hr class="border-dashed opacity-25">
-                <p class="text-gray-500">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo corrupti velit quo sapiente magni tenetur blanditiis autem nemo rem nihil.
-                </p>
-            </div>
-            <!-- question 5 -->
-            <div class="space-y-5 shadow-md p-5 rounded-xl bg-white mt-5">
-                <h2 class="font-bold text-xl">
-                    Question-5: How do you create, add, and remove elements using JavaScript?
-                </h2>
-                <hr class="border-dashed opacity-25">
-                <p class="text-gray-500">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo corrupti velit quo sapiente magni tenetur blanditiis autem nemo rem nihil.
-                </p>
-            </div>
-            
-        </section>
-        
-    </main> 
+        <h1 class="font-bold text-center text-3xl mt-4">Blogs</h1>
+
+        <main class=" mt-5 ">
+            <section>
+                <!-- question 1 -->
+                <div class="space-y-5 shadow-md p-5 rounded-xl bg-white mt-5">
+                    <h2 class="font-bold text-xl">
+                        Question-1: What are the different ways to select an element in the DOM?
+                    </h2>
+                    <hr class="border-dashed opacity-25">
+
+                    <ul class="text-gray-500">
+                        <li>document.getElementById('id name');</li>
+                        <li>document.getElementByClassName('class name');</li>
+                        <li>document.getElementByTagName('tag name');</li>
+                        <li>document.querySelector('selector');</li>
+                        <li>document.querySelectorAll('selector');</li>
+                    </ul>
+
+                </div>
+                <!-- question 2 -->
+                <div class="space-y-5 shadow-md p-5 rounded-xl bg-white mt-5">
+                    <h2 class="font-bold text-xl">
+                        Question-2: What is the difference between innerHTML, innerText, and textContent ?
+                    </h2>
+                    <hr class="border-dashed opacity-25">
+                    <p class="text-gray-500">
+                        <span class="text-indigo-500">innerHTML</span> property is used to access or change the HTML content (tags and text content) in an element.
+                        Otherwise <span class="text-indigo-500">innerText</span> property is used to access or change text content in an element . And <span class="text-indigo-500">textContent</span> property is used to access or change text content with hidden text in an element.
+                    </p>
+                </div>
+                <!-- question 3 -->
+                <div class="space-y-5 shadow-md p-5 rounded-xl bg-white mt-5">
+                    <h2 class="font-bold text-xl">
+                        Question-3: What is event delegation in the DOM?
+                    </h2>
+                    <hr class="border-dashed opacity-25">
+                    <p class="text-gray-500">
+                        <span  class="text-indigo-500">Event delegation</span> is a system where parent element handles its child elements . Jekhane event
+                        hobe sekhane handle na kore tar parent element ke handles kora hoy . In use this propagation
+                        easily avoid adding many event listeners and it s work event bubbling process .
+                    </p>
+                </div>
+                <!-- question 4 -->
+                <div class="space-y-5 shadow-md p-5 rounded-xl bg-white mt-5">
+                    <h2 class="font-bold text-xl">
+                        Question-4: What is event bubbling in the DOM?
+                    </h2>
+                    <hr class="border-dashed opacity-25">
+                    <p class="text-gray-500">
+                        <span  class="text-indigo-500">Event bubbling </span> is started from target element and its end to the root element(document) . Its starts from the child element and moves step by step towards the parent element like bubbles and reaches the root element .
+                    </p>
+                </div>
+                <!-- question 5 -->
+                <div class="space-y-5 shadow-md p-5 rounded-xl bg-white mt-5">
+                    <h2 class="font-bold text-xl">
+                        Question-5: How do you create, add, and remove elements using JavaScript?
+                    </h2>
+                    <hr class="border-dashed opacity-25">
+                    <p class="text-gray-500">
+                        <span class="text-indigo-500">createElement</span>  method is used to create new HTML element dynamically in DOM . Example : <span class="text-indigo-500">const p = document.createElement('p');</span>   
+                        Here new paragraph tag is created . <br>
+                        <span class="text-indigo-500">add()</span> method is used of the classlist to add one or more classes to an element in DOM . And <span class="text-indigo-500">remove()</span> method is used to remove HTML element from the DOM.
+
+                    </p>
+                    <p >
+                        
+                    </p>
+                </div>
+
+            </section>
+
+        </main>
     </section>
 
     <script src="blog.js"></script>
 </body>
+
 </html>

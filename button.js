@@ -1,5 +1,5 @@
 // complete button
-const completeBtn = document.getElementsByClassName('complete-btn');
+const completeBtn = document.querySelectorAll('.complete-btn');
 
 for (const btn of completeBtn) {
     btn.addEventListener('click', function () {
