@@ -1,12 +1,17 @@
-const month = new Date().getMonth() + 1;
-console.log(month)
-const date = new Date().getDate();
-console.log(date)
+const weekOfDate = ['Sun' , 'Mon' , 'Tue' , 'Wed' , 'Thu' , 'Fri' , 'Sat'];
+const monthsOfYear = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+    'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+const day = weekOfDate[new Date().getDay()];
+console.log(day)
+
+const month = monthsOfYear[new Date().getMonth()];
+
+const date = new Date().getDate().toString().padStart(2 , '0');
+
 const year = new Date().getFullYear();
-console.log(year)
 
 const dateId = document.getElementById('date-container');
 dateId.innerHTML =`
-<p> i  am </p>
+<p> ${day} ,</p>
+<h3 class = "font-bold ">${month} ${date} ${year}</h3>
 `
-console.log(dateId.innerHTML)
