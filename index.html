@@ -24,11 +24,26 @@
         .poppins {
             font-family: "Poppins", sans-serif;
         }
+
+        .button{
+            transition: 1.5s;
+            animation: button-style 1s infinite alternate;
+        }
+
+        @keyframes button-style {
+            from{
+                left: 0;
+            }
+            to{
+                left: 0;
+                transform: scale(0.95); 
+            }
+        }
     </style>
 </head>
 
-<body class="poppins bg-[#F4F7FF] text-[#00303C] py-5">
-    <section class="w-11/12 mx-auto grid grid-flow-dense grid-cols-4 gap-5">
+<body class="poppins bg-[#F4F7FF] text-[#00303C] pt-5 pb-20">
+    <section class="w-11/12 mx-auto grid grid-flow-dense grid-cols-4 gap-5 ">
         <!-- navbar -->
         <header class="bg-white shadow-sm rounded-xl col-span-4">
             <nav class="flex justify-between py-5 px-6 ">
@@ -39,7 +54,7 @@
                 <div class="flex items-center gap-9">
                     <p class="flex items-center bg-base-200 p-4 rounded-3xl gap-2"><img src="assets/checkbox.png"
                             alt=""> <span id="total" class="text-[#1E1E1E] font-bold text-[32px]">23</span></p>
-                    <button id="color-btn" class=" rounded-full bg-base-200 p-3">
+                    <button id="color-btn" class=" rounded-full bg-base-200 p-3 cursor-pointer hover:scale-105">
                         <img src="assets/theme-btn.png" alt="">
                     </button>
                 </div>
@@ -52,8 +67,8 @@
                 <div class="px-6 pt-6 pb-8 grid grid-flow-col-dense grid-cols-4 gap-6">
                     <!-- task assigned -->
                     <div class="flex justify-center items-center bg-[#F4F7FF] gap-5 py-6 px-5 rounded-xl col-span-1 ">
-                        <div class="bg-white p-4 rounded-full">
-                            <img src="assets/checkbox.png" alt="" class="">
+                        <div class="bg-white lg:p-4 rounded-full">
+                            <img src="assets/checkbox.png" alt="" >
                         </div>
                         <div class="">
                             <p class="">Task Assigned</p>
@@ -62,14 +77,14 @@
                     </div>
                     <!-- something new -->
                     <div
-                        class="flex justify-center items-center gap-5 py-6 px-5 rounded-xl col-span-2 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] "   id="discover-btn">
+                        class="flex justify-center items-center gap-5 py-6 px-5 rounded-xl col-span-2 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] duration-[0.6] button cursor-pointer"   id="discover-btn">
                         <img src="assets/board.png" alt="">
                         <h3 class="text-white font-medium text-2xl max-w-72">Discover Something New Today!</h3>
                     </div>
                     <!-- date -->
                     <div class="flex justify-center items-center bg-[#F4F7FF] gap-5 py-6 px-5 rounded-xl col-span-1">
-                        <div class="bg-white p-4 rounded-full">
-                            <img src="assets/calender.png" alt="" class="">
+                        <div class="bg-white lg:p-4 rounded-full">
+                            <img src="assets/calender.png" alt="">
                         </div>
                         <div id="date-container">
                             
@@ -200,9 +215,7 @@
                     History</button>
 
             <div id="history-container" class="border-t-2 border-dashed border-gray-200">
-                <!-- <p class="bg-base-200 p-3 text-sm rounded-lg mt-4">You have Complete The Task Add Dark Mode at 12:48:15 PM </p>
-            </div>
-                <p class="bg-base-200 p-4 text-sm rounded-lg ">You have Complete The Task Add Dark Mode at 12:48:15 PM </p> -->
+              
             </div>
         </aside>
     </section>
